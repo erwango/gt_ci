@@ -1,0 +1,1 @@
+Run mbedgt --test-spec test_spec.json -n zephyr_hello_world -V --sync=0
