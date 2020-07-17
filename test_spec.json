@@ -1,0 +1,36 @@
+{
+  "builds": {
+    "DISCO_L475VG_IOT01A-GCC_ARM": {
+      "platform": "DISCO_L475VG_IOT01A",
+      "toolchain": "GCC_ARM",
+      "base_path": "BUILD/tests/DISCO_L475VG_IOT01A/GCC_ARM",
+      "baud_rate": 115200,
+      "binary_type": "bootable",
+      "tests": {
+        "zephyr_hello_world": {
+          "binaries": [
+            {
+              "path": "/local/mcu/zephyrproject/zephyr/samples/hello_world/build/disco_l475_iot1/zephyr/zephyr.bin"
+            }
+          ]
+        }
+      }
+},
+    "FRDM-K64F-GCC_ARM": {
+      "platform": "K64F",
+      "toolchain": "GCC_ARM",
+      "base_path": "BUILD/tests/K64F/GCC_ARM",
+      "baud_rate": 115200,
+      "binary_type": "bootable",
+      "tests": {
+        "zephyr_hello_world": {
+          "binaries": [
+            {
+              "path": "/local/mcu/zephyrproject/zephyr/samples/hello_world/build/frdm_k64f/zephyr/zephyr.bin"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
